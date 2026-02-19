@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Vinememz.com</title>
+  <style>
+    body {
+      background-color: Red;
+      color: Black;
+      font-family: monospace;
+      text-align: center;
+      padding-top: 100px;
+    }
+    h1 {
+      font-size: 50px;
+    }
+    p {
+      font-size: 20px;
+    }
+    #surprise {
+      margin-top: 30px;
+      font-size: 25px;
+      color: red;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Zararlı yazılım</h1>
+  <p>Bilgisayar tehlikede kapat siteyi</p>
+  <div id="surprise"> Bu kesinlikle bilgisayarı sile bilir! </div>
+
+  <script>
+    // Sayfada "Zararlı yazılım" yazısı varsa sürpriz mesajı göster
+    window.onload = function() {
+      const text = document.querySelector("h1").innerText;
+      if (text.includes("tiklamak istersen tikla arabic")) {
+        document.getElementById("surprise").style.display = "block";
+      }
+    };
+  </script>
+</body>
+</html>
